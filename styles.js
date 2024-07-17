@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from "react-native";
+import {Dimensions, StyleSheet } from "react-native";
 const { height, width } = Dimensions.get("window");
 
 export const styles = StyleSheet.create({
@@ -7,16 +7,15 @@ export const styles = StyleSheet.create({
         justifyContent: "flex-end",
     },
     button: {
-        // backgroundColor: 'rgba(123,104,238,0,8)',
-        backgroundColor: "#7e19ff",
+        backgroundColor: 'rgb(244, 107, 53)',
         height: 55,
-        justifyContent: "center",
-        alignItems: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 35,
         marginHorizontal: 20,
         marginVertical: 10,
-        borderRadius: 35,
-        borderWidth: 1,
-        borderColor: "white",
+        // borderWidth: 1,
+        borderColor: 'white'
     },
     absoluteFill: {
         position: "absolute",
@@ -27,40 +26,53 @@ export const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 20,
-        color: "white",
-        letterSpacing: 0.5,
+        fontWeight: '600',
+        color: 'white',
+        letterSpacing: 0.5
     },
     buttonContainer: {
         justifyContent: "center",
-        height: height / 3,
+        height: height / 4,
     },
     textInput: {
-        height: 50,
+        height: 40,
         borderWidth: 1,
+        borderColor: 'rgb(244, 107, 53)',
         marginHorizontal: 20,
         marginVertical: 10,
         borderRadius: 25,
-        borderColor: "rgba(0,0,0,.2)",
-        paddingLeft: 10,
+        paddingLeft: 20
     },
     formButton: {
-        backgroundColor: "#7e19ff",
+        backgroundColor: 'rgb(244, 107, 53)',
         height: 55,
-        justifyContent: "center",
-        alignItems: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 35,
         marginHorizontal: 20,
         marginVertical: 10,
-        borderRadius: 35,
         borderWidth: 1,
-        // borderColor: "white",
-        shadowColor: "#0000",
+        borderColor: 'white',
+        shadowColor: "#000",
         shadowOffset: {
-            width: 0,
-            height: 0,
+          width: 0,
+          height: 4,
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 5,
+    },
+    formInputContainer: {
+        marginBottom: 50,
+        // ...styles.absoluteFill,
+        position: "absolute",
+        left: 0,
+        right: 0,
+        bottom: 0,
+        top: 0,
+        zIndex: -1,
+        justifyContent: 'center',
+    
     },
     closeButtonContainer: {
         marginBottom: 70,
@@ -78,8 +90,8 @@ export const styles = StyleSheet.create({
         elevation: 1,
         backgroundColor: "white",
         alignItems: "center",
-        borderRadius: 20
-
+        borderRadius: 20,
+        top: -20,
+        color: "#7e19ff",
     },
-    formInputContainer: {},
 });
